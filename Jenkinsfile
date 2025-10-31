@@ -28,8 +28,8 @@ pipeline {
         stage('Deploy to Kubernetes') {
             steps {
                 // apply deployment & service
-                bat 'kubectl apply -f week9/deployment.yaml --validate=false'
-                bat 'kubectl apply -f week9/services.yaml'
+                bat 'kubectl apply -f deployment.yaml --validate=false'
+                bat 'kubectl apply -f services.yaml'
             }
         }
     }
